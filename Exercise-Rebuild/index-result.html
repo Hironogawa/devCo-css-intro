@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Landing Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      header {
+        background-color: #333;
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0;
+        color: #3498db;
+        font-weight: bold;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .hero {
+        background-image: url("startup-image.jpg");
+        background-size: cover;
+        background-position: center;
+
+        color: #c0c0c0;
+        padding: 100px 15px;
+        text-align: right;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+        gap: 12px;
+      }
+
+      .feature {
+        cursor: pointer;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .feature:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .cta-button {
+        background-color: #3498db;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      .cta-button:hover {
+        background-color: #e74c3c;
+      }
+
+      .animate-text-color {
+        animation: text-color 2s infinite;
+      }
+
+      .container-about {
+        margin: 15px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+      }
+
+      h2.container-about {
+        text-align: center;
+      }
+
+      p.container-about {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .container-cta {
+        background-color: #3498db;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .container-cta h2 {
+        font-size: 28px;
+        color: #fff;
+      }
+
+      .cta-button {
+        background-color: #e74c3c;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #c0392b;
+      }
+      .container-footer {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .social-icons {
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+      }
+      .social-icons a:hover {
+        color: #3498db;
+      }
+
+      .copyright {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      @keyframes text-color {
+        0% {
+          color: #3498db;
+        }
+        50% {
+          color: #e74c3c;
+        }
+        100% {
+          color: #3498db;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        .features {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Fancy Startup</h1>
+    </header>
+    <div class="container">
+      <div class="hero animate-text-color">
+        <h2>Welcome to Our Startup</h2>
+        <p>We are here to help you succeed.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <h3>Feature 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="feature">
+          <h3>Feature 2</h3>
+          <p>Nulla eget libero et odio convallis egestas vel ut elit.</p>
+        </div>
+        <div class="feature">
+          <h3>Feature 3</h3>
+          <p>Vivamus accumsan libero ac libero volutpat eget.</p>
+        </div>
+      </div>
+      <div class="container-about">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+          velit vel metus varius aliquet. In euismod efficitur eros nec
+          tincidunt. Integer id justo vel libero iaculis finibus. Morbi feugiat,
+          libero a tincidunt tempus, massa arcu tincidunt urna, in ullamcorper
+          erat sapien at libero. Vivamus vel augue ac massa varius lacinia in ut
+          urna. Suspendisse ac ex sed eros dapibus cursus. Proin pharetra, dolor
+          id vestibulum scelerisque, mi felis efficitur libero, ac convallis
+          felis lorem et ante. Duis auctor magna nec libero efficitur, a
+          fringilla lorem condimentum. Nulla facilisi.
+        </p>
+      </div>
+      <div class="container-cta">
+        <h2>Join Our Tech Startup</h2>
+        <button class="cta-button">Get Started</button>
+      </div>
+    </div>
+    <footer>
+      <div class="container-footer">
+        <div class="logo">TechStartup</div>
+        <div class="social-icons">
+          <a href="#">Facebook<i></i></a>
+          <a href="#">Twitter<i></i></a>
+          <a href="#">Linkedin<i></i></a>
+        </div>
+        <div class="copyright">
+          &copy; 2023 TechStartup. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
